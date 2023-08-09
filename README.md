@@ -60,11 +60,11 @@ On VPS you want to protect run:
 
 ```
 chmod +x /root/back_side.sh
-./prot_side.sh
+./back_side.sh
 ```
 
-After that you can test the connection on your Protected VPS type ```ping 10.0.0.2```
-
+After that you can test the connection, on your Protected VPS type ```ping 10.0.0.2```
+If you get replies, it means everything is working
 
 #Note:
 Backend VPS can be accessed by ```10.0.0.2``` IP
