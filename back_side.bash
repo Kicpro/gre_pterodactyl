@@ -43,8 +43,3 @@ echo 'nameserver 8.8.8.8' >> /etc/resolv.conf
 
 ip route add $PROTECTED_IP via $GATEWAY_IP dev $INTERFACE onlink
 ip route replace default via 10.0.0.1
-
-# Sets proper MTU
-
-ip link set mtu 1440 gre0
-ip link set mtu 1440 gre1
