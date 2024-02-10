@@ -47,8 +47,3 @@ iptables -A FORWARD -s 10.0.0.2 -m state --state NEW,ESTABLISHED,RELATED -j ACCE
 # Route our Protected IP through the Tunnel
 
 ip route add $PROTECTED_IP/32 via 10.0.0.2
-
-# Sets proper MTU
-
-ip link set mtu 1440 gre0
-ip link set mtu 1440 gre1
